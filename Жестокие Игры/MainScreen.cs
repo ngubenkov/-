@@ -15,6 +15,7 @@ namespace Жестокие_Игры
         public MainScreen()
         {
             InitializeComponent();
+            test();
         }
 
     
@@ -22,6 +23,8 @@ namespace Жестокие_Игры
         {
             getPlayers();
             List<Player> players = getPlayers();
+
+            
 
             if (areNamesUnique(players))
             {
@@ -101,6 +104,40 @@ namespace Жестокие_Игры
             }
 
             return Players;
+        }
+
+        private void test()
+        {
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            btnAddPlayer_Click_1(null, new EventArgs());
+            var txtBox = this.Controls.Find("txtBox1",  true);
+            txtBox[0].Text = "a";
+            txtBox = this.Controls.Find("txtBox2", true);
+            txtBox[0].Text = "B";
+            txtBox = this.Controls.Find("txtBox3", true);
+            txtBox[0].Text = "C";
+            txtBox = this.Controls.Find("txtBox4", true);
+            txtBox[0].Text = "D";
+            txtBox = this.Controls.Find("txtBox5", true);
+            txtBox[0].Text = "E";
+            txtBox = this.Controls.Find("txtBox6", true);
+            txtBox[0].Text = "F";
+            txtBox = this.Controls.Find("txtBox7", true);
+            txtBox[0].Text = "G";
+            txtBox = this.Controls.Find("txtBox8", true);
+            txtBox[0].Text = "H";
+            txtBox = this.Controls.Find("txtBox9", true);
+            txtBox[0].Text = "I";
+
+
+
         }
  
     }

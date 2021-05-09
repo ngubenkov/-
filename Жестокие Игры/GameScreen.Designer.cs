@@ -33,6 +33,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnStatistics = new System.Windows.Forms.Button();
             this.btnNextRound = new System.Windows.Forms.Button();
+            this.tblPlayersBlock = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.lblRound, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tblPlayersBlock, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -102,6 +104,19 @@
             this.btnNextRound.UseVisualStyleBackColor = true;
             this.btnNextRound.Click += new System.EventHandler(this.btnNextRound_Click);
             // 
+            // tblPlayersBlock
+            // 
+            this.tblPlayersBlock.AutoSize = true;
+            this.tblPlayersBlock.ColumnCount = 1;
+            this.tblPlayersBlock.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblPlayersBlock.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tblPlayersBlock.Location = new System.Drawing.Point(3, 51);
+            this.tblPlayersBlock.Name = "tblPlayersBlock";
+            this.tblPlayersBlock.RowCount = 1;
+            this.tblPlayersBlock.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblPlayersBlock.Size = new System.Drawing.Size(0, 331);
+            this.tblPlayersBlock.TabIndex = 2;
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,5 +139,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnStatistics;
         private System.Windows.Forms.Button btnNextRound;
+        private System.Windows.Forms.TableLayoutPanel tblPlayersBlock;
     }
 }
